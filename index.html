@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Task Tracker</h1>
+</header>
+
+<main>
+
+<section>
+
+<h2>Add New Task</h2>
+
+<form id="task-form">
+
+<label for="task-name">Task Name</label>
+<input
+type="text"
+id="task-name"
+required>
+
+<label for="priority">Priority</label>
+
+<select id="priority">
+
+<option value="Low">Low</option>
+<option value="Medium">Medium</option>
+<option value="High">High</option>
+
+</select>
+
+<label for="due-date">Due Date</label>
+
+<input
+type="date"
+id="due-date"
+required>
+
+<button type="submit">
+Add Task
+</button>
+
+</form>
+
+</section>
+
+<section>
+
+<h2>Your Tasks</h2>
+
+<div>
+
+<button id="all-btn">All</button>
+
+<button id="pending-btn">Pending</button>
+
+<button id="done-btn">Done</button>
+
+</div>
+
+<br>
+
+<select id="sort">
+
+<option value="">Sort</option>
+
+<option value="priority">
+By Priority
+</option>
+
+<option value="dueDate">
+By Due Date
+</option>
+
+</select>
+
+<p id="counter">
+Showing 0 of 0 tasks
+</p>
+
+<ul id="task-list">
+
+</ul>
+
+<button id="clear-all">
+
+Clear All
+
+</button>
+
+<h2>Summary</h2>
+
+<table border="1">
+
+<thead>
+
+<tr>
+
+<th>Task</th>
+
+<th>Priority</th>
+
+<th>Due Date</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody id="summary-body">
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>Task Tracker</p>
+
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
